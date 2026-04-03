@@ -25,16 +25,16 @@ Toda a comunicação externa e entre campi é mediada por um **ISP (Internet Ser
 
 ## Planejamento de Endereçamento (VLSM)
 
-Utilizou-se a segmentação de sub-redes para garantir isolamento e controle de tráfego. Cada sub-rede `/29` foi escolhida por suportar exatamente **6 hosts válidos**.
+Utilizou-se a segmentação de sub-redes para garantir isolamento e controle de tráfego. Cada sub-rede foi configurada como `/24`, designando uma rede lógica exclusiva para cada departamento.
 
 | Localidade | Departamento | Sub-rede | Máscara |
 | :--- | :--- | :--- | :--- |
-| **Campus CP** | ADM | `192.168.10.0/29` | `255.255.255.248` |
-| **Campus CP** | TEC | `192.168.10.8/29` | `255.255.255.248` |
-| **Campus LD** | ADM | `192.168.20.0/29` | `255.255.255.248` |
-| **Campus LD** | TEC | `192.168.20.8/29` | `255.255.255.248` |
-| **Campus CT** | ADM | `192.168.30.0/29` | `255.255.255.248` |
-| **Campus CT** | TEC | `192.168.30.8/29` | `255.255.255.248` |
+| **Campus CP** | ADM | `192.168.10.0/24` | `255.255.255.0` |
+| **Campus CP** | TEC | `192.168.11.0/24` | `255.255.255.0` |
+| **Campus LD** | ADM | `192.168.20.0/24` | `255.255.255.0` |
+| **Campus LD** | TEC | `192.168.21.0/24` | `255.255.255.0` |
+| **Campus CT** | ADM | `192.168.30.0/24` | `255.255.255.0` |
+| **Campus CT** | TEC | `192.168.31.0/24` | `255.255.255.0` |
 
 ## Implementação Técnica
 <img width="1616" height="527" alt="image" src="https://github.com/user-attachments/assets/9878ba0e-4255-45c9-a435-f3937364f85e" />
@@ -52,9 +52,8 @@ Utilizou-se a segmentação de sub-redes para garantir isolamento e controle de 
 * Verificação de conectividade ponta a ponta (End-to-End).
 * Testes de **Ping** realizados com sucesso entre computadores de campi diferentes, cruzando a infraestrutura do ISP:
 
-  <img width="1910" height="481" alt="image" src="https://github.com/user-attachments/assets/db7c210d-06e9-40ad-9aac-189d57af0676" />
 
 
 
 ---
-**Ferramenta Utilizada:** Cisco Packet Tracer  
+**Ferramenta Utilizada:** Cisco Packet Tracer
