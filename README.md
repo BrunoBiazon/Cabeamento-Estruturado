@@ -37,6 +37,7 @@ Utilizou-se a segmentação de sub-redes para garantir isolamento e controle de 
 | **Campus CT** | TEC | `192.168.30.8/29` | `255.255.255.248` |
 
 ## Implementação Técnica
+<img width="1616" height="527" alt="image" src="https://github.com/user-attachments/assets/9878ba0e-4255-45c9-a435-f3937364f85e" />
 
 ### 1. Estrutura por Campus
 * Um roteador principal por campus (CP, LD, CT).
@@ -49,7 +50,11 @@ Utilizou-se a segmentação de sub-redes para garantir isolamento e controle de 
 
 ### 3. Comunicação e Testes
 * Verificação de conectividade ponta a ponta (End-to-End).
-* Testes de **Ping** realizados com sucesso entre computadores de campi diferentes, cruzando a infraestrutura do ISP.
+* Testes de **Ping** realizados com sucesso entre computadores de campi diferentes, cruzando a infraestrutura do ISP:
+
+  <img width="1910" height="481" alt="image" src="https://github.com/user-attachments/assets/db7c210d-06e9-40ad-9aac-189d57af0676" />
+
+
 
 ---
 **Ferramenta Utilizada:** Cisco Packet Tracer  
