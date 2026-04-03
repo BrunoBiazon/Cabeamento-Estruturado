@@ -37,21 +37,25 @@ Utilizou-se a segmentação de sub-redes para garantir isolamento e controle de 
 | **Campus CT** | TEC | `192.168.31.0/24` | `255.255.255.0` |
 
 ## Implementação Técnica
-<img width="1616" height="527" alt="image" src="https://github.com/user-attachments/assets/9878ba0e-4255-45c9-a435-f3937364f85e" />
 
 ### 1. Estrutura por Campus
 * Um roteador principal por campus (CP, LD, CT).
 * Dois switches por campus (um por departamento).
 * Roteamento interno configurado para permitir a comunicação entre ADM e TEC dentro do próprio campus.
+  <img width="1616" height="527" alt="image" src="https://github.com/user-attachments/assets/9878ba0e-4255-45c9-a435-f3937364f85e" />
 
 ### 2. O Núcleo (ISP)
 * Configuração de um roteador central representando o Provedor de Internet.
 * Implementação do protocolo **BGP (Border Gateway Protocol)** para simular a troca de rotas entre os sistemas autônomos dos campi.
 
+  <img width="727" height="735" alt="printISP" src="https://github.com/user-attachments/assets/334bc85b-fdf9-45f1-95b0-38c8b0137cec" />
+
+
 ### 3. Comunicação e Testes
 * Verificação de conectividade ponta a ponta (End-to-End).
 * Testes de **Ping** realizados com sucesso entre computadores de campi diferentes, cruzando a infraestrutura do ISP:
 
+<img width="835" height="570" alt="image" src="https://github.com/user-attachments/assets/2eabbb04-8359-4092-bd1a-08d25de31ffd" />
 
 
 
