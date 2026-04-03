@@ -1,5 +1,5 @@
 # Projeto de Redes: Integração de Três Campi da UTFPR
-
+### Disciplina: AS63D - Redes De Computadores
 Este projeto consiste na simulação de uma infraestrutura de rede robusta interligando os campi da **UTFPR** em Cornélio Procópio (CP), Londrina (LD) e Curitiba (CT), centralizados por um provedor de internet (ISP).
 
 ## Fundamentos de Cabeamento Estruturado
